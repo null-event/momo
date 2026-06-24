@@ -1,5 +1,7 @@
 # Gyroscopic Lake Live Wallpaper
 
+[![Android CI](https://github.com/null-event/momo/actions/workflows/android-build.yml/badge.svg?branch=main)](https://github.com/null-event/momo/actions/workflows/android-build.yml)
+
 A self-contained Android **Live Wallpaper** rendering a 3D, "over-under" lake
 scene with OpenGL ES 3.0. The camera looks horizontally across a waterline at
 `y = 0`: above the line are a distant forest, a gradient sky, and looping birds;
