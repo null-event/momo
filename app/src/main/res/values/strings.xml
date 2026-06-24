@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lake Wallpaper</string>
+    <string name="wallpaper_label">Gyroscopic Lake</string>
+    <string name="wallpaper_author">null-event</string>
+    <string name="wallpaper_description">An over-under 3D lake: forest, sky and birds above the waterline; roots, fish and caustics below. Tilt to look around, tap to feed the fish.</string>
+</resources>
