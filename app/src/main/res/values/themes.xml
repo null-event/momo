@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Settings screen theme: AppCompat (required by AppCompatActivity) plus the
+         preferenceTheme attribute that androidx.preference needs to inflate. -->
+    <style name="Theme.Aquarium" parent="Theme.AppCompat.DayNight">
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+</resources>

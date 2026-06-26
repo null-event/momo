@@ -1,4 +1,4 @@
-package com.nullevent.lakewallpaper
+package com.nullevent.aquarium
 
 import kotlin.math.cos
 import kotlin.math.sin
@@ -10,7 +10,7 @@ import kotlin.math.tan
  *
  * All matrices are 16-element [FloatArray]s in COLUMN-MAJOR order, matching the
  * memory layout expected by OpenGL ES. Element (row, col) lives at index
- * `col * 4 + row`. No external math libraries are used.
+ * `col * 4 + row`. No external math libraries (GLM / JOML / etc.) are used.
  */
 object MathUtils {
 
@@ -50,21 +50,18 @@ object MathUtils {
         centerX: Float, centerY: Float, centerZ: Float,
         upX: Float, upY: Float, upZ: Float
     ) {
-        // forward = normalize(center - eye)
         var fx = centerX - eyeX
         var fy = centerY - eyeY
         var fz = centerZ - eyeZ
         val rlf = 1f / length(fx, fy, fz)
         fx *= rlf; fy *= rlf; fz *= rlf
 
-        // side = normalize(cross(forward, up))
         var sx = fy * upZ - fz * upY
         var sy = fz * upX - fx * upZ
         var sz = fx * upY - fy * upX
         val rls = 1f / length(sx, sy, sz)
         sx *= rls; sy *= rls; sz *= rls
 
-        // recomputed up = cross(side, forward)
         val ux = sy * fz - sz * fy
         val uy = sz * fx - sx * fz
         val uz = sx * fy - sy * fx
@@ -161,7 +158,7 @@ object MathUtils {
 
     /**
      * General 4x4 matrix inverse. Returns false (and leaves [inv] untouched)
-     * for a singular matrix. Adapted from the standard cofactor expansion.
+     * for a singular matrix. Standard cofactor expansion.
      */
     fun invertM(inv: FloatArray, src: FloatArray): Boolean {
         val m = src

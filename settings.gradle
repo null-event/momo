@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LakeWallpaper"
+rootProject.name = "AquariumWallpaper"
 include ':app'

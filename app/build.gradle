@@ -1,4 +1,4 @@
-// Module-level build script for the Lake Live Wallpaper.
+// Module-level build script for the Gyroscopic Aquarium live wallpaper.
 // RenderScript is intentionally NOT enabled — none is required.
 
 plugins {
@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace 'com.nullevent.lakewallpaper'
+    namespace 'com.nullevent.aquarium'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.nullevent.lakewallpaper"
+        applicationId "com.nullevent.aquarium"
         minSdk 24
         targetSdk 34
         versionCode 1
@@ -34,7 +34,7 @@ android {
         jvmTarget = '17'
     }
 
-    // No Compose, no RenderScript, no view binding — pure GLSurfaceView.
+    // No Compose, no RenderScript, no view binding — pure GLSurfaceView + GLES30.
     buildFeatures {
         compose false
         viewBinding false
@@ -44,6 +44,8 @@ android {
 dependencies {
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
+    // androidx.preference powers the live wallpaper settings screen only.
+    implementation 'androidx.preference:preference-ktx:1.2.1'
     // OpenGL ES 3.0 and the WallpaperService come from the Android framework;
-    // no external graphics or math libraries are used.
+    // no external graphics, math, or game-engine libraries are used.
 }

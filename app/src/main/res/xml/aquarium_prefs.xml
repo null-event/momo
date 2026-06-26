@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Fish">
+        <ListPreference
+            app:key="pref_variety_count"
+            app:title="Number of fish varieties"
+            app:entries="@array/variety_entries"
+            app:entryValues="@array/variety_values"
+            app:defaultValue="4"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:key="pref_count_per_variety"
+            app:title="Fish per variety"
+            app:entries="@array/count_entries"
+            app:entryValues="@array/count_values"
+            app:defaultValue="12"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            app:key="pref_fish_speed"
+            app:title="Fish swimming speed"
+            android:max="100"
+            app:defaultValue="50"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Water">
+        <ListPreference
+            app:key="pref_water_color"
+            app:title="Water color"
+            app:entries="@array/water_color_entries"
+            app:entryValues="@array/water_color_values"
+            app:defaultValue="teal"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            app:key="pref_wave_speed"
+            app:title="Water surface speed"
+            android:max="100"
+            app:defaultValue="50"
+            app:showSeekBarValue="true" />
+        <SeekBarPreference
+            app:key="pref_choppiness"
+            app:title="Wave choppiness"
+            android:max="100"
+            app:defaultValue="50"
+            app:showSeekBarValue="true" />
+        <SeekBarPreference
+            app:key="pref_murkiness"
+            app:title="Water murkiness"
+            android:max="100"
+            app:defaultValue="50"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Roots &amp; Plants">
+        <ListPreference
+            app:key="pref_tree_count"
+            app:title="Number of root trees"
+            app:entries="@array/tree_entries"
+            app:entryValues="@array/tree_values"
+            app:defaultValue="2"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            app:key="pref_roots_scale"
+            app:title="Root size / spread"
+            android:max="100"
+            app:defaultValue="50"
+            app:showSeekBarValue="true" />
+        <ListPreference
+            app:key="pref_seaweed_count"
+            app:title="Seaweed density"
+            app:entries="@array/seaweed_entries"
+            app:entryValues="@array/seaweed_values"
+            app:defaultValue="90"
+            app:useSimpleSummaryProvider="true" />
+        <SeekBarPreference
+            app:key="pref_plant_sway"
+            app:title="Plant sway strength"
+            android:max="100"
+            app:defaultValue="50"
+            app:showSeekBarValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Placeholder thumbnail: a simple over-under lake split drawn as a vector. -->
+<!-- Placeholder thumbnail: an underwater aquarium with a sliver of sky at the top. -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="96dp"
     android:height="96dp"
     android:viewportWidth="96"
     android:viewportHeight="96">
-    <!-- Sky -->
+    <!-- Thin sky strip near the top (waterline high in frame) -->
     <path
-        android:fillColor="#3F80D9"
-        android:pathData="M0,0 H96 V48 H0 Z" />
-    <!-- Water / underwater -->
+        android:fillColor="#6FB0E0"
+        android:pathData="M0,0 H96 V12 H0 Z" />
+    <!-- Underwater body -->
     <path
-        android:fillColor="#0C3A4A"
-        android:pathData="M0,48 H96 V96 H0 Z" />
+        android:fillColor="#0E4A55"
+        android:pathData="M0,12 H96 V96 H0 Z" />
     <!-- Waterline highlight -->
     <path
         android:fillColor="#BFE6F0"
-        android:pathData="M0,46 H96 V50 H0 Z" />
-    <!-- A fish silhouette below -->
+        android:pathData="M0,11 H96 V14 H0 Z" />
+    <!-- Lakebed -->
     <path
-        android:fillColor="#9FC4D6"
-        android:pathData="M40,70 l10,-5 l0,10 z M50,68 l14,-3 l0,6 z" />
+        android:fillColor="#3A2A18"
+        android:pathData="M0,80 H96 V96 H0 Z" />
+    <!-- Seaweed -->
+    <path
+        android:fillColor="#1E7A38"
+        android:pathData="M16,80 l3,-26 l3,26 z M24,80 l2,-18 l3,18 z" />
+    <!-- Fish silhouettes -->
+    <path
+        android:fillColor="#A9D6E6"
+        android:pathData="M40,44 l11,-6 l0,12 z M51,42 l15,-3 l0,7 z" />
+    <path
+        android:fillColor="#CFE9C6"
+        android:pathData="M60,62 l8,-4 l0,8 z" />
 </vector>

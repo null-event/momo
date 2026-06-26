@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lake Wallpaper</string>
-    <string name="wallpaper_label">Gyroscopic Lake</string>
+    <string name="app_name">Gyro Aquarium</string>
+    <string name="wallpaper_label">Gyroscopic Aquarium</string>
     <string name="wallpaper_author">null-event</string>
-    <string name="wallpaper_description">An over-under 3D lake: forest, sky and birds above the waterline; roots, fish and caustics below. Tilt to look around, tap to feed the fish.</string>
+    <string name="wallpaper_description">A 3D underwater aquarium viewed across the waterline: roots, plants, rocks, caustics and schooling fish. Tilt to look around, tap to drop food.</string>
+    <string name="settings_label">Aquarium settings</string>
 </resources>

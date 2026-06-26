@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="variety_entries">
+        <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item>
+    </string-array>
+    <string-array name="variety_values">
+        <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item>
+    </string-array>
+
+    <string-array name="count_entries">
+        <item>6</item><item>9</item><item>12</item><item>15</item><item>18</item>
+    </string-array>
+    <string-array name="count_values">
+        <item>6</item><item>9</item><item>12</item><item>15</item><item>18</item>
+    </string-array>
+
+    <string-array name="water_color_entries">
+        <item>Teal</item><item>Deep Blue</item><item>Green</item><item>Murky</item><item>Tropical</item>
+    </string-array>
+    <string-array name="water_color_values">
+        <item>teal</item><item>blue</item><item>green</item><item>murky</item><item>tropical</item>
+    </string-array>
+
+    <string-array name="tree_entries">
+        <item>0</item><item>1</item><item>2</item><item>3</item><item>4</item>
+    </string-array>
+    <string-array name="tree_values">
+        <item>0</item><item>1</item><item>2</item><item>3</item><item>4</item>
+    </string-array>
+
+    <string-array name="seaweed_entries">
+        <item>None</item><item>Sparse</item><item>Medium</item><item>Dense</item>
+    </string-array>
+    <string-array name="seaweed_values">
+        <item>0</item><item>45</item><item>90</item><item>160</item>
+    </string-array>
+</resources>
