@@ -1,0 +1,49 @@
+// Module-level build script for the Lake Live Wallpaper.
+// RenderScript is intentionally NOT enabled — none is required.
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.nullevent.lakewallpaper'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.nullevent.lakewallpaper"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    // No Compose, no RenderScript, no view binding — pure GLSurfaceView.
+    buildFeatures {
+        compose false
+        viewBinding false
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    // OpenGL ES 3.0 and the WallpaperService come from the Android framework;
+    // no external graphics or math libraries are used.
+}

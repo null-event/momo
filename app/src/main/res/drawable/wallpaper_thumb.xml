@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Placeholder thumbnail: a simple over-under lake split drawn as a vector. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <!-- Sky -->
+    <path
+        android:fillColor="#3F80D9"
+        android:pathData="M0,0 H96 V48 H0 Z" />
+    <!-- Water / underwater -->
+    <path
+        android:fillColor="#0C3A4A"
+        android:pathData="M0,48 H96 V96 H0 Z" />
+    <!-- Waterline highlight -->
+    <path
+        android:fillColor="#BFE6F0"
+        android:pathData="M0,46 H96 V50 H0 Z" />
+    <!-- A fish silhouette below -->
+    <path
+        android:fillColor="#9FC4D6"
+        android:pathData="M40,70 l10,-5 l0,10 z M50,68 l14,-3 l0,6 z" />
+</vector>
